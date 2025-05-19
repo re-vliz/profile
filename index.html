@@ -6,19 +6,31 @@
   <title>Welcome to Vliz's Profile</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div id="loader-modern">
+    <div class="loader-logo">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
   <div id="particles-js"></div>
   <div class="container">
     <div class="card">
       <img src="assets/vlizpfp.png" alt="Foto Profil" class="profile-pic" />
       <h1 class="name">Vliz</h1>
-      <p class="role">Hanya orang biasa yang tertarik banyak hal, tapi kagak jago-jago anjing.</p>
+      <p class="role">Hanya orang biasa yang tertarik sama banyak hal, tapi kagak jago-jago anjing.</p>
     
       <div class="bio">
          <p>
-            <a href="https://www.facebook.com/re.vlizz" target="_blank" class="fb-link tooltip" data-tooltip="Kunjungi Facebook gw">Facebook</a> |
-            <a href="https://osu.ppy.sh/u/vliz" target="_blank" class="osu-link tooltip" data-tooltip="Profil osu! gw">osu!</a> |
+            <a href="https://www.facebook.com/re.vlizz" target="_blank" class="fb-link tooltip" data-tooltip="Kunjungi Facebook gw">Facebook</a>|
+            <a href="https://osu.ppy.sh/u/vliz" target="_blank" class="osu-link tooltip" data-tooltip="Profil osu! gw">osu!</a>|
             <a href="https://discordlookup.com/user/259251925587853313" target="_blank" class="discord-link tooltip" data-tooltip="Cek profil Discord gw">Discord</a>
 
           </p>
@@ -85,6 +97,12 @@
       }
     },
     "retina_detect": true
+  });
+</script>
+<script>
+  window.addEventListener("load", () => {
+    const loader = document.getElementById("loader-modern");
+    loader.classList.add("hidden");
   });
 </script>
 </body>
