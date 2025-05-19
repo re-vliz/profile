@@ -1,2 +1,2 @@
 # profile
-My Profile :p
+Cuman belajar buat profile page doang kok

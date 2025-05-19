@@ -7,19 +7,84 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div id="particles-js"></div>
   <div class="container">
     <div class="card">
       <img src="assets/vlizpfp.png" alt="Foto Profil" class="profile-pic" />
       <h1 class="name">Vliz</h1>
-      <p class="role">Pelajar & Pemain osu!</p>
+      <p class="role">Hanya orang biasa yang tertarik banyak hal, tapi kagak jago-jago anjing.</p>
+    
       <div class="bio">
-        <p>📍 Kalimantan Tengah, Kabupaten Kapuas</p>
-        <p>🎮 Main osu! pakai Veikk S640 (full area, mod Hidden ON terus)</p>
-        <p>🗡️ Main Mobile Legends, hero andalan: Benedetta</p>
-        <p>📱 HP: Infinix Note 30 (Android 14)</p>
-        <p>Gila</p>
+         <p>
+            <a href="https://www.facebook.com/re.vlizz" target="_blank" class="fb-link tooltip" data-tooltip="Kunjungi Facebook gw">Facebook</a> |
+            <a href="https://osu.ppy.sh/u/vliz" target="_blank" class="osu-link tooltip" data-tooltip="Profil osu! gw">osu!</a> |
+            <a href="https://discordlookup.com/user/259251925587853313" target="_blank" class="discord-link tooltip" data-tooltip="Cek profil Discord gw">Discord</a>
+
+          </p>
       </div>
     </div>
   </div>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+  particlesJS("particles-js", {
+    "particles": {
+      "number": {
+        "value": 50,
+        "density": {
+          "enable": true,
+          "value_area": 800
+        }
+      },
+      "color": {
+        "value": "#00ffcc"
+      },
+      "shape": {
+        "type": "circle"
+      },
+      "opacity": {
+        "value": 0.5,
+        "random": true
+      },
+      "size": {
+        "value": 3,
+        "random": true
+      },
+      "move": {
+        "enable": true,
+        "speed": 2,
+        "direction": "none",
+        "random": true,
+        "straight": false,
+        "out_mode": "out",
+        "bounce": false
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "grab"
+        },
+        "onclick": {
+          "enable": true,
+          "mode": "push"
+        }
+      },
+      "modes": {
+        "grab": {
+          "distance": 140,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "push": {
+          "particles_nb": 4
+        }
+      }
+    },
+    "retina_detect": true
+  });
+</script>
 </body>
 </html>
