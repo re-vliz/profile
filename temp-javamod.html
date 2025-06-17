@@ -1,128 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actions and Stuff for Minecraft Java Edition</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 15px;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Actions and Stuff Java Edition</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-            /* --- Desain Latar Belakang Baru --- */
-            background: linear-gradient(135deg, #e0f7fa 0%, #bbdefb 100%); /* Gradasi dari biru muda ke biru laut */
-            background-attachment: fixed; /* Memastikan gradasi tetap saat discroll */
-            /* --- Akhir Desain Latar Belakang Baru --- */
-        }
-        h1, h2, h3 {
-            color: #2c3e50;
-        }
-        a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .section-title {
-            font-weight: bold;
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            margin-bottom: 5px;
-        }
-        .important-links ul {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-        .important-links ul li {
-            flex: 1 1 auto;
-            min-width: 120px;
-        }
-        .timestamps-list li {
-            margin-bottom: 8px;
-        }
-        .timestamps-list li a {
-            display: inline-block;
-            margin-left: 5px;
-        }
-        .note {
-            margin-top: 30px;
-            padding: 10px;
-            background-color: #ecf0f1; /* Akan tetap sama agar kontras dengan latar belakang baru */
-            border-left: 5px solid #3498db;
-        }
-    </style>
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      overflow-x: hidden;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #0ff; }
+      to { text-shadow: 0 0 20px #0ff, 0 0 30px #0ff; }
+    }
+
+    .section {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid #0ff;
+      border-radius: 12px;
+      padding: 1rem 2rem;
+      margin-bottom: 2rem;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .section:hover {
+      transform: translateY(-5px);
+      background: rgba(0, 255, 255, 0.1);
+    }
+
+    .section a {
+      color: #0ff;
+      text-decoration: none;
+    }
+
+    .section a:hover {
+      text-decoration: underline;
+    }
+
+    .timestamp {
+      color: #aaa;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+
+    .socials, .links, .video-tags {
+      display: grid;
+      gap: 0.5rem;
+      font-size: 1rem;
+    }
+
+    .footer {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 1.1rem;
+      color: #0ff;
+      animation: flicker 3s infinite;
+    }
+
+    @keyframes flicker {
+      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        opacity: 1;
+      }
+      20%, 24%, 55% {
+        opacity: 0.3;
+      }
+    }
+  </style>
 </head>
 <body>
-    <p>Actions and Stuff is one of the most important Resource Packs in Minecraft history, however it has always been Bedrock Exclusive. So.. what packs can we use to bring that A&S feel to Java Edition? We answer that question today!</p>
+  <h1>🔥 Actions and Stuff for Java Edition 🔥</h1>
 
-    <p>🔔 <strong>SUBSCRIBE FOR MORE!</strong></p>
+  <div class="section">
+    <p>Actions and Stuff is one of the most important Resource Packs in Minecraft history, however it has always been Bedrock Exclusive. So... what packs can we use to bring that A&amp;S feel to Java Edition? We answer that question today!</p>
+  </div>
 
-    <p><strong>MY MODPACK</strong> ► <a href="https://modrinth.com/modpack/vanilla-..." target="_blank">https://modrinth.com/modpack/vanilla-...</a></p>
+  <div class="section">
+    <strong>🔔 SUBSCRIBE FOR MORE!</strong>
+  </div>
 
-    <p><strong>JOIN MY KO-FI</strong> ► <a href="https://ko-fi.com/demonjoetv" target="_blank">https://ko-fi.com/demonjoetv</a></p>
+  <div class="section links">
+    <p><strong>MY MODPACK:</strong> <a href="https://modrinth.com/modpack/vanilla-...">https://modrinth.com/modpack/vanilla-...</a></p>
+    <p><strong>JOIN MY KO-FI:</strong> <a href="https://ko-fi.com/demonjoetv">https://ko-fi.com/demonjoetv</a></p>
+  </div>
 
-    ---
+  <div class="section socials">
+    <strong>IMPORTANT LINKS:</strong>
+    <p>Twitter: / demonjoetv</p>
+    <p>Instagram: / demonjoetv</p>
+    <p>TikTok: / demonjoetv</p>
+    <p>Facebook: / demonjoefb</p>
+    <p>Become a Member: / @demonjoetv</p>
+  </div>
 
-    <div class="section-title">💎 IMPORTANT LINKS:</div>
-    <div class="important-links">
-        <ul>
-            <li>Twitter: <a href="https://twitter.com/demonjoetv" target="_blank">/demonjoetv</a></li>
-            <li>Instagram: <a href="https://instagram.com/demonjoetv" target="_blank">/demonjoetv</a></li>
-            <li>TikTok: <a href="https://tiktok.com/@demonjoetv" target="_blank">/demonjoetv</a></li>
-            <li>Facebook: <a href="https://facebook.com/demonjoefb" target="_blank">/demonjoefb</a></li>
-            <li>Become a Member: <a href="https://www.youtube.com/@demonjoetv/join" target="_blank">/@demonjoetv</a></li>
-        </ul>
-    </div>
-
-    ---
-
-    <div class="section-title">🎥 TIMESTAMPS:</div>
-    <ul class="timestamps-list">
-        <li>0:00 - INTRO</li>
-        <li>0:40 - HOLD MY ITEMS <a href="https://modrinth.com/mod/hold-my-items" target="_blank">https://modrinth.com/mod/hold-my-items</a></li>
-        <li>1:14 - FRESH ANIMATIONS <a href="https://modrinth.com/resourcepack/fre..." target="_blank">https://modrinth.com/resourcepack/fre...</a></li>
-        <li>1:34 - FRESH ANIMATIONS EXTENSIONS <a href="https://modrinth.com/resourcepack/fre..." target="_blank">https://modrinth.com/resourcepack/fre...</a></li>
-        <li>2:10 - FA PLAYER ANIMATIONS <a href="https://ko-fi.com/freshlx" target="_blank">https://ko-fi.com/freshlx</a></li>
-        <li>2:59 - FRESH MOVES <a href="https://modrinth.com/resourcepack/tra..." target="_blank">https://modrinth.com/resourcepack/tra...</a></li>
-        <li>3:39 - NOT ENOUGH ANIMATIONS <a href="https://modrinth.com/mod/not-enough-a..." target="_blank">https://modrinth.com/mod/not-enough-a...</a></li>
-        <li>4:40 - BABY ANIMALS REMASTERED <a href="https://modrinth.com/resourcepack/bab..." target="_blank">https://modrinth.com/resourcepack/bab...</a></li>
-        <li>5:05 - BLOCKY ARMOR STANDS <a href="https://modrinth.com/resourcepack/blo..." target="_blank">https://modrinth.com/resourcepack/blo...</a></li>
-        <li>5:31 - ARMORY CONGLOMERY <a href="https://modrinth.com/resourcepack/arm..." target="_blank">https://modrinth.com/resourcepack/arm...</a></li>
-        <li>5:49 - ACTUALLY 3D STUFF <a href="https://modrinth.com/resourcepack/act..." target="_blank">https://modrinth.com/resourcepack/act...</a></li>
-        <li>7:25 - FRESH FOOD <a href="https://modrinth.com/resourcepack/fre..." target="_blank">https://modrinth.com/resourcepack/fre...</a></li>
-        <li>8:12 - FRESH FLOWERS & PLANTS <a href="https://modrinth.com/resourcepack/fre..." target="_blank">https://modrinth.com/resourcepack/fre...</a></li>
-        <li>9:05 - FRESHLY CREEPERS <a href="https://modrinth.com/resourcepack/fre..." target="_blank">https://modrinth.com/resourcepack/fre...</a></li>
-        <li>9:40 - FANCY BEDS <a href="https://modrinth.com/resourcepack/fan..." target="_blank">https://modrinth.com/resourcepack/fan...</a></li>
-        <li>10:06 - ENCHANTMENT OUTLINE <a href="https://modrinth.com/resourcepack/enc..." target="_blank">https://modrinth.com/resourcepack/enc...</a></li>
-        <li>10:42 - FRESH SKELETON PHYSICS <a href="https://modrinth.com/resourcepack/fre..." target="_blank">https://modrinth.com/resourcepack/fre...</a></li>
-        <li>11:36 - SUBTLE EFFECTS & MINECARTS w/ WHEELS <a href="https://modrinth.com/mod/subtle-effects" target="_blank">https://modrinth.com/mod/subtle-effects</a> <a href="https://modrinth.com/resourcepack/min..." target="_blank">https://modrinth.com/resourcepack/min...</a></li>
-        <li>12:51 - PARTICLE RAIN <a href="https://modrinth.com/mod/particle-rain" target="_blank">https://modrinth.com/mod/particle-rain</a></li>
-        <li>14:11 - EXPLOSIVE ENHANCEMENT <a href="https://modrinth.com/mod/explosive-en..." target="_blank">https://modrinth.com/mod/explosive-en...</a></li>
-        <li>14:41 - FOGULOUS <a href="https://modrinth.com/resourcepack/fog..." target="_blank">https://modrinth.com/resourcepack/fog...</a></li>
+  <div class="section">
+    <strong>🎥 TIMESTAMPS:</strong>
+    <ul>
+      <li>0:40 - <a href="https://modrinth.com/mod/hold-my-items">HOLD MY ITEMS</a></li>
+      <li>1:14 - <a href="https://modrinth.com/resourcepack/fre...">FRESH ANIMATIONS</a></li>
+      <li>2:10 - <a href="https://ko-fi.com/freshlx">FA PLAYER ANIMATIONS</a></li>
+      <li>2:59 - <a href="https://modrinth.com/resourcepack/tra...">FRESH MOVES</a></li>
+      <li>3:39 - <a href="https://modrinth.com/mod/not-enough-a...">NOT ENOUGH ANIMATIONS</a></li>
+      <li>4:40 - <a href="https://modrinth.com/resourcepack/bab...">BABY ANIMALS REMASTERED</a></li>
+      <li>5:05 - <a href="https://modrinth.com/resourcepack/blo...">BLOCKY ARMOR STANDS</a></li>
+      <li>5:31 - <a href="https://modrinth.com/resourcepack/arm...">ARMORY CONGLOMERY</a></li>
+      <li>5:49 - <a href="https://modrinth.com/resourcepack/act...">ACTUALLY 3D STUFF</a></li>
+      <li>7:25 - <a href="https://modrinth.com/resourcepack/fre...">FRESH FOOD</a></li>
+      <li>8:12 - <a href="https://modrinth.com/resourcepack/fre...">FRESH FLOWERS & PLANTS</a></li>
+      <li>9:05 - <a href="https://modrinth.com/resourcepack/fre...">FRESHLY CREEPERS</a></li>
+      <li>9:40 - <a href="https://modrinth.com/resourcepack/fan...">FANCY BEDS</a></li>
+      <li>10:06 - <a href="https://modrinth.com/resourcepack/enc...">ENCHANTMENT OUTLINE</a></li>
+      <li>10:42 - <a href="https://modrinth.com/resourcepack/fre...">FRESH SKELETON PHYSICS</a></li>
+      <li>11:36 - <a href="https://modrinth.com/mod/subtle-effects">SUBTLE EFFECTS</a> & <a href="https://modrinth.com/resourcepack/min...">MINECARTS w/ WHEELS</a></li>
+      <li>12:51 - <a href="https://modrinth.com/mod/particle-rain">PARTICLE RAIN</a></li>
+      <li>14:11 - <a href="https://modrinth.com/mod/explosive-en...">EXPLOSIVE ENHANCEMENT</a></li>
+      <li>14:41 - <a href="https://modrinth.com/resourcepack/fog...">FOGULOUS</a></li>
     </ul>
+  </div>
 
-    ---
+  <div class="section video-tags">
+    <strong>🎦 VIDEO TAGS:</strong>
+    <p>Minecraft, Minecraft News, Minecraft Mods, Minecraft Resource Packs, Minecraft Shaders, Minecraft Texture Packs, Minecraft Data Packs, Minecraft Actions and Stuff Java Edition, Actions and Stuff on Java Edition, How To Get Actions and Stuff on Java, Minecraft Mod Showcase, Minecraft Best Mods 2025, Minecraft Best Resource Packs 2025</p>
+  </div>
 
-    <div class="section-title">🎦 VIDEO TAGS:</div>
-    <p>
-        Minecraft, Minecraft News, Minecraft Mods, Minecraft Resource Packs, Minecraft Shaders, Minecraft Texture Packs, Minecraft Data Packs, Minecraft Actions and Stuff Java Edition, Actions and Stuff on Java Edition, Actions and Stuff on Minecraft Java, How To Get Actions and Stuff on Java, Minecraft Actions and Stuff Mods, Minecraft Java Actions and Stuff, Minecraft Mod Showcase, Minecraft Best Mods 2025, Minecraft Best Resource Packs 2025,<br>#Minecraft #ActionsAndStuff #MinecraftJava
-    </p>
-
-    <div class="note">
-        <p><strong>If you're reading this, I love you :)</strong></p>
-    </div>
-
+  <div class="footer">
+    If you're reading this, I love you :)
+  </div>
 </body>
 </html>
