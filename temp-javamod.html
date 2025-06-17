@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,138 +9,149 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-    }
+    }body {
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  overflow-x: hidden;
+  padding: 2rem;
+}
 
-    body {
-      font-family: 'Orbitron', sans-serif;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: #fff;
-      overflow-x: hidden;
-      padding: 2rem;
-    }
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  animation: glow 2s ease-in-out infinite alternate;
+}
 
-    h1 {
-      font-size: 2.5rem;
-      text-align: center;
-      margin-bottom: 2rem;
-      animation: glow 2s ease-in-out infinite alternate;
-    }
+@keyframes glow {
+  from { text-shadow: 0 0 10px #0ff; }
+  to { text-shadow: 0 0 20px #0ff, 0 0 30px #0ff; }
+}
 
-    @keyframes glow {
-      from { text-shadow: 0 0 10px #0ff; }
-      to { text-shadow: 0 0 20px #0ff, 0 0 30px #0ff; }
-    }
+.section {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #0ff;
+  border-radius: 12px;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
 
-    .section {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid #0ff;
-      border-radius: 12px;
-      padding: 1rem 2rem;
-      margin-bottom: 2rem;
-      transition: transform 0.3s ease, background 0.3s ease;
-    }
+.section:hover {
+  transform: translateY(-5px);
+  background: rgba(0, 255, 255, 0.1);
+}
 
-    .section:hover {
-      transform: translateY(-5px);
-      background: rgba(0, 255, 255, 0.1);
-    }
+.section a {
+  color: #0ff;
+  text-decoration: none;
+}
 
-    .section a {
-      color: #0ff;
-      text-decoration: none;
-    }
+.section a:hover {
+  text-decoration: underline;
+}
 
-    .section a:hover {
-      text-decoration: underline;
-    }
+.timestamp {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
 
-    .timestamp {
-      color: #aaa;
-      font-size: 0.9rem;
-      margin-top: 0.5rem;
-    }
+.socials, .links, .video-tags {
+  display: grid;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
 
-    .socials, .links, .video-tags {
-      display: grid;
-      gap: 0.5rem;
-      font-size: 1rem;
-    }
+.footer {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #0ff;
+  animation: flicker 3s infinite;
+}
 
-    .footer {
-      margin-top: 3rem;
-      text-align: center;
-      font-size: 1.1rem;
-      color: #0ff;
-      animation: flicker 3s infinite;
-    }
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
 
-    @keyframes flicker {
-      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-        opacity: 1;
-      }
-      20%, 24%, 55% {
-        opacity: 0.3;
-      }
-    }
+.fancy-button, .futuristic-button {
+  background: #0ff;
+  color: #000;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+  box-shadow: 0 0 15px #0ff;
+}
+
+.fancy-button:hover, .futuristic-button:hover {
+  background: #00ffff80;
+  color: #fff;
+  box-shadow: 0 0 25px #0ff, 0 0 50px #0ff;
+}
+
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+  }
+  20%, 24%, 55% {
+    opacity: 0.3;
+  }
+}
+
   </style>
 </head>
 <body>
-  <h1>🔥 Actions and Stuff for Java Edition 🔥</h1>
-
-  <div class="section">
+  <h1>🔥 Actions and Stuff for Java Edition 🔥</h1>  <div class="section">
     <p>Actions and Stuff is one of the most important Resource Packs in Minecraft history, however it has always been Bedrock Exclusive. So... what packs can we use to bring that A&amp;S feel to Java Edition? We answer that question today!</p>
-  </div>
-
-  <div class="section">
+  </div>  <div class="section">
     <strong>🔔 SUBSCRIBE FOR MORE!</strong>
-  </div>
-
-  <div class="section links">
-    <p><strong>MY MODPACK:</strong> <a href="https://modrinth.com/modpack/vanilla-...">https://modrinth.com/modpack/vanilla-...</a></p>
-    <p><strong>JOIN MY KO-FI:</strong> <a href="https://ko-fi.com/demonjoetv">https://ko-fi.com/demonjoetv</a></p>
-  </div>
-
-  <div class="section socials">
+  </div>  <div class="section links">
+    <p><strong>MY MODPACK:</strong> <a href="https://modrinth.com/modpack/vanilla-experience" target="_blank">https://modrinth.com/modpack/vanilla-experience</a></p>
+    <p><strong>JOIN MY KO-FI:</strong> <a href="https://ko-fi.com/demonjoetv" target="_blank">https://ko-fi.com/demonjoetv</a></p>
+  </div>  <div class="section socials">
     <strong>IMPORTANT LINKS:</strong>
     <p>Twitter: / demonjoetv</p>
     <p>Instagram: / demonjoetv</p>
     <p>TikTok: / demonjoetv</p>
     <p>Facebook: / demonjoefb</p>
     <p>Become a Member: / @demonjoetv</p>
-  </div>
-
-  <div class="section">
+  </div>  <div class="section">
     <strong>🎥 TIMESTAMPS:</strong>
     <ul>
       <li>0:40 - <a href="https://modrinth.com/mod/hold-my-items" target="_blank">HOLD MY ITEMS</a></li>
-      <li>1:14 - <a href="https://modrinth.com/resourcepack/fre..." target="_blank">FRESH ANIMATIONS</a></li>
-      <li>2:10 - <a href="https://ko-fi.com/freshlx" target="_blank">FA PLAYER ANIMATIONS</a></li>
-      <li>2:59 - <a href="https://modrinth.com/resourcepack/tra..." target="_blank">FRESH MOVES</a></li>
-      <li>3:39 - <a href="https://modrinth.com/mod/not-enough-a..." target="_blank">NOT ENOUGH ANIMATIONS</a></li>
-      <li>4:40 - <a href="https://modrinth.com/resourcepack/bab..." target="_blank">BABY ANIMALS REMASTERED</a></li>
-      <li>5:05 - <a href="https://modrinth.com/resourcepack/blo..." target="_blank">BLOCKY ARMOR STANDS</a></li>
-      <li>5:31 - <a href="https://modrinth.com/resourcepack/arm..." target="_blank">ARMORY CONGLOMERY</a></li>
-      <li>5:49 - <a href="https://modrinth.com/resourcepack/act..." target="_blank">ACTUALLY 3D STUFF</a></li>
-      <li>7:25 - <a href="https://modrinth.com/resourcepack/fre..." target="_blank">FRESH FOOD</a></li>
-      <li>8:12 - <a href="https://modrinth.com/resourcepack/fre..." target="_blank">FRESH FLOWERS & PLANTS</a></li>
-      <li>9:05 - <a href="https://modrinth.com/resourcepack/fre..." target="_blank">FRESHLY CREEPERS</a></li>
-      <li>9:40 - <a href="https://modrinth.com/resourcepack/fan..." target="_blank">FANCY BEDS</a></li>
-      <li>10:06 - <a href="https://modrinth.com/resourcepack/enc..." target="_blank">ENCHANTMENT OUTLINE</a></li>
-      <li>10:42 - <a href="https://modrinth.com/resourcepack/fre..." target="_blank">FRESH SKELETON PHYSICS</a></li>
-      <li>11:36 - <a href="https://modrinth.com/mod/subtle-effects" target="_blank">SUBTLE EFFECTS</a> & <a href="https://modrinth.com/resourcepack/min..." target="_blank">MINECARTS w/ WHEELS</a></li>
+      <li>1:14 - <a href="https://modrinth.com/resourcepack/fresh-animations" target="_blank">FRESH ANIMATIONS</a></li>
+      <li>2:59 - <a href="https://modrinth.com/resourcepack/tra-fresh-moves" target="_blank">FRESH MOVES</a></li>
+      <li>3:39 - <a href="https://modrinth.com/mod/not-enough-animations" target="_blank">NOT ENOUGH ANIMATIONS</a></li>
+      <li>4:40 - <a href="https://modrinth.com/resourcepack/baby-animals-remastered" target="_blank">BABY ANIMALS REMASTERED</a></li>
+      <li>5:05 - <a href="https://modrinth.com/resourcepack/blocky-armor-stands" target="_blank">BLOCKY ARMOR STANDS</a></li>
+      <li>5:31 - <a href="https://modrinth.com/resourcepack/armory-conglomery" target="_blank">ARMORY CONGLOMERY</a></li>
+      <li>5:49 - <a href="https://modrinth.com/resourcepack/actually-3d-stuff" target="_blank">ACTUALLY 3D STUFF</a></li>
+      <li>7:25 - <a href="https://modrinth.com/resourcepack/fresh-food" target="_blank">FRESH FOOD</a></li>
+      <li>8:12 - <a href="https://modrinth.com/resourcepack/fresh-flowers-plants" target="_blank">FRESH FLOWERS & PLANTS</a></li>
+      <li>9:05 - <a href="https://modrinth.com/resourcepack/freshly-creepers" target="_blank">FRESHLY CREEPERS</a></li>
+      <li>9:40 - <a href="https://modrinth.com/resourcepack/fancy-beds" target="_blank">FANCY BEDS</a></li>
+      <li>10:06 - <a href="https://modrinth.com/resourcepack/enchantment-outline" target="_blank">ENCHANTMENT OUTLINE</a></li>
+      <li>10:42 - <a href="https://modrinth.com/resourcepack/fresh-skeleton-physics" target="_blank">FRESH SKELETON PHYSICS</a></li>
+      <li>11:36 - <a href="https://modrinth.com/mod/subtle-effects" target="_blank">SUBTLE EFFECTS</a> & <a href="https://modrinth.com/resourcepack/minecarts-wheels" target="_blank">MINECARTS w/ WHEELS</a></li>
       <li>12:51 - <a href="https://modrinth.com/mod/particle-rain" target="_blank">PARTICLE RAIN</a></li>
-      <li>14:11 - <a href="https://modrinth.com/mod/explosive-en..." target="_blank">EXPLOSIVE ENHANCEMENT</a></li>
-      <li>14:41 - <a href="https://modrinth.com/resourcepack/fog..." target="_blank">FOGULOUS</a></li>
+      <li>14:11 - <a href="https://modrinth.com/mod/explosive-enhancement" target="_blank">EXPLOSIVE ENHANCEMENT</a></li>
+      <li>14:41 - <a href="https://modrinth.com/resourcepack/fogulous" target="_blank">FOGULOUS</a></li>
     </ul>
-  </div>
-
-  <div class="section video-tags">
+  </div>  <div class="section video-tags">
     <strong>🎦 VIDEO TAGS:</strong>
     <p>Minecraft, Minecraft News, Minecraft Mods, Minecraft Resource Packs, Minecraft Shaders, Minecraft Texture Packs, Minecraft Data Packs, Minecraft Actions and Stuff Java Edition, Actions and Stuff on Java Edition, How To Get Actions and Stuff on Java, Minecraft Mod Showcase, Minecraft Best Mods 2025, Minecraft Best Resource Packs 2025</p>
-  </div>
-
-  <div class="footer">
-    If you're reading this, I love you :)
+  </div>  <div class="button-container">
+    <a href="temp-javamod.html" class="futuristic-button" target="_blank">🔥 EXPLORE MODPACK 🔥</a>
+  </div>  <div class="footer">
+    If you're reading this, I love you :)<br>
+    <span style="font-size: 0.9rem; color: #aaa;">Seluruh isi halaman ini merupakan kutipan langsung dari deskripsi video YouTube DemonJoeTV</span>
   </div>
 </body>
 </html>
